@@ -1,3 +1,6 @@
+# Usage
+# python3 gui.py
+
 # import the necessary packages
 from __future__ import print_function
 from tkinter import *
