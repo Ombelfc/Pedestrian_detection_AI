@@ -3,16 +3,16 @@
 
 # import the necessary packages
 from __future__ import print_function
-from tkinter import *
-from PIL import Image
-from PIL import ImageTk
-import tkinter.filedialog as fd
-import cv2
-from imutils.object_detection import non_max_suppression
-from imutils import paths
 import argparse
 import imutils
 import numpy as np
+import tkinter.filedialog as fd
+import cv2
+from tkinter import *
+from PIL import Image
+from PIL import ImageTk
+from imutils.object_detection import non_max_suppression
+from imutils import paths
  
 panelA = None
 panelB = None
@@ -82,9 +82,11 @@ def select_image():
 		panelC.image = image
 		panelC.pack(side="right", padx=10, pady=10)
 	else:
+		
 		panelA.configure(image=original)
 		panelB.configure(image=initial)
 		panelC.configure(image=image)
+		
 		panelA.image = original
 		panelB.image = initial
 		panelC.image = image
